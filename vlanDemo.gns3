@@ -1,0 +1,364 @@
+{
+    "auto_start": false,
+    "name": "vlanDemo",
+    "project_id": "d2abfdcc-e2c8-4ceb-86e6-08c8fc6d0c68",
+    "revision": 7,
+    "topology": {
+        "computes": [
+            {
+                "compute_id": "vm",
+                "host": "192.168.40.131",
+                "name": "GNS3 VM",
+                "port": 3080,
+                "protocol": "http"
+            }
+        ],
+        "drawings": [
+            {
+                "drawing_id": "e86291a3-e44e-4eaf-b94e-4294afa2f130",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"120\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">VLAN Testing</text></svg>",
+                "x": -441,
+                "y": -41,
+                "z": 0
+            },
+            {
+                "drawing_id": "9fb4d0aa-aa0a-4f30-a9c9-c993f82fa5ca",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"120\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">VLAN Testing</text></svg>",
+                "x": 130,
+                "y": -32,
+                "z": 0
+            },
+            {
+                "drawing_id": "31b09741-3a46-4749-8a1e-6a2783807318",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">VLAN Design</text></svg>",
+                "x": -235,
+                "y": -37,
+                "z": 0
+            },
+            {
+                "drawing_id": "e3148a60-5330-45dc-b72d-07b8ad3b945a",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">VLAN Design</text></svg>",
+                "x": 325,
+                "y": -37,
+                "z": 0
+            },
+            {
+                "drawing_id": "e28d1473-f524-46d4-87d1-90d3b54c4cc6",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"100\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">TRUNK PORT</text></svg>",
+                "x": -73,
+                "y": -153,
+                "z": 0
+            },
+            {
+                "drawing_id": "0e4cc449-b04e-4911-91a7-d2d6826cdd95",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"60\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">Client</text></svg>",
+                "x": -381,
+                "y": -145,
+                "z": 0
+            },
+            {
+                "drawing_id": "f8cebed6-a1d6-4d57-b0f6-537a2e44edb6",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"60\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">Server</text></svg>",
+                "x": 315,
+                "y": -133,
+                "z": 0
+            }
+        ],
+        "links": [
+            {
+                "link_id": "c868eafe-0d5d-407b-a0a3-6c1be86c59bd",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "02cb0385-80da-46b8-b26a-4c17ab030cd8",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "5d6dbacd-292e-4ef4-85dc-b0c60a235b4e",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "2de05499-b868-4ad9-b943-7ae04cd9832d",
+                "nodes": [
+                    {
+                        "adapter_number": 1,
+                        "node_id": "02cb0385-80da-46b8-b26a-4c17ab030cd8",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "8b9d298a-1389-4fc6-8301-46168b23643d",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "9f00a4f7-a96e-4cbc-8f13-49e1563ed80f",
+                "nodes": [
+                    {
+                        "adapter_number": 2,
+                        "node_id": "02cb0385-80da-46b8-b26a-4c17ab030cd8",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "node_id": "491ccd71-56c4-45c5-a56f-34d3d215230c",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "32543bab-b777-4531-adf3-df227dcedd7a",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "491ccd71-56c4-45c5-a56f-34d3d215230c",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "e289d6f4-99e9-4368-a42b-a379bebe1014",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "e9cd5592-5769-4927-834c-7405d9643969",
+                "nodes": [
+                    {
+                        "adapter_number": 1,
+                        "node_id": "491ccd71-56c4-45c5-a56f-34d3d215230c",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "250066c6-8ddc-41ef-842a-ea23d2e0d0eb",
+                        "port_number": 0
+                    }
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Cisco IOSvL2 15.2.4055-1",
+                    "x": -51,
+                    "y": -46
+                },
+                "name": "Cisco IOSvL2 15.2.4055-1",
+                "node_id": "02cb0385-80da-46b8-b26a-4c17ab030cd8",
+                "node_type": "qemu",
+                "port_name_format": "Gi{1}/{0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 16,
+                    "boot_priority": "c",
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "vios_l2-adventerprisek9-m.vmdk.SSA.152-4.0.55.E",
+                    "hda_disk_image_md5sum": "1a3a21f5697cae64bb930895b986d71e",
+                    "hda_disk_interface": "virtio",
+                    "hdb_disk_interface": "ide",
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_interface": "ide",
+                    "legacy_networking": false,
+                    "mac_address": "00:0c:68:0c:d8:00",
+                    "options": "-nographic",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/usr/bin/qemu-system-x86_64",
+                    "ram": 768,
+                    "usage": "There is no default password and enable password. There is no default configuration present."
+                },
+                "symbol": ":/symbols/multilayer_switch.svg",
+                "x": -328,
+                "y": -144,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5001,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Cisco IOSvL2 15.2.4055-2",
+                    "x": -53,
+                    "y": -48
+                },
+                "name": "Cisco IOSvL2 15.2.4055-2",
+                "node_id": "491ccd71-56c4-45c5-a56f-34d3d215230c",
+                "node_type": "qemu",
+                "port_name_format": "Gi{1}/{0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 16,
+                    "boot_priority": "c",
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "vios_l2-adventerprisek9-m.vmdk.SSA.152-4.0.55.E",
+                    "hda_disk_image_md5sum": "1a3a21f5697cae64bb930895b986d71e",
+                    "hda_disk_interface": "virtio",
+                    "hdb_disk_interface": "ide",
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_interface": "ide",
+                    "legacy_networking": false,
+                    "mac_address": "00:0c:68:23:0c:00",
+                    "options": "-nographic",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/usr/bin/qemu-system-x86_64",
+                    "ram": 768,
+                    "usage": "There is no default password and enable password. There is no default configuration present."
+                },
+                "symbol": ":/symbols/multilayer_switch.svg",
+                "x": 244,
+                "y": -140,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5002,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "192.168.0.1",
+                    "x": -7,
+                    "y": 68
+                },
+                "name": "192.168.0.1",
+                "node_id": "5d6dbacd-292e-4ef4-85dc-b0c60a235b4e",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5003,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "image": "gns3/ubuntu:xenial"
+                },
+                "symbol": "linux_guest.svg",
+                "x": -418,
+                "y": 70,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5004,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "192.168.0.2",
+                    "x": -7,
+                    "y": 65
+                },
+                "name": "192.168.0.2",
+                "node_id": "8b9d298a-1389-4fc6-8301-46168b23643d",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5005,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "image": "gns3/ubuntu:xenial"
+                },
+                "symbol": "linux_guest.svg",
+                "x": -231,
+                "y": 74,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5006,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "192.168.0.3",
+                    "x": -5,
+                    "y": 65
+                },
+                "name": "192.168.0.3",
+                "node_id": "e289d6f4-99e9-4368-a42b-a379bebe1014",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5007,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "image": "gns3/ubuntu:xenial"
+                },
+                "symbol": "linux_guest.svg",
+                "x": 138,
+                "y": 88,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5008,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "192.168.0.4",
+                    "x": -11,
+                    "y": 66
+                },
+                "name": "192.168.0.4",
+                "node_id": "250066c6-8ddc-41ef-842a-ea23d2e0d0eb",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5009,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "image": "gns3/ubuntu:xenial"
+                },
+                "symbol": "linux_guest.svg",
+                "x": 344,
+                "y": 82,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "2.0.3"
+}

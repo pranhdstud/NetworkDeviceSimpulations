@@ -1,0 +1,414 @@
+{
+    "auto_start": false,
+    "name": "NATDemonstration",
+    "project_id": "94fc8097-e1a5-4aee-8600-2d68d1acd390",
+    "revision": 4,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from PC1 port Ethernet0 to SW1 port 2",
+                "destination_node_id": 3,
+                "destination_port_id": 10,
+                "id": 1,
+                "source_node_id": 4,
+                "source_port_id": 17
+            },
+            {
+                "description": "Link from PC2 port Ethernet0 to SW1 port 3",
+                "destination_node_id": 3,
+                "destination_port_id": 11,
+                "id": 2,
+                "source_node_id": 5,
+                "source_port_id": 18
+            },
+            {
+                "description": "Link from PC3 port Ethernet0 to SW1 port 4",
+                "destination_node_id": 3,
+                "destination_port_id": 12,
+                "id": 3,
+                "source_node_id": 6,
+                "source_port_id": 19
+            },
+            {
+                "description": "Link from SW1 port 1 to Cisco IOSv 15.5(3)M-1 port Gi0/0",
+                "destination_node_id": 1,
+                "destination_port_id": 1,
+                "id": 4,
+                "source_node_id": 3,
+                "source_port_id": 9
+            },
+            {
+                "description": "Link from Cisco IOSv 15.5(3)M-1 port Gi0/1 to Cisco IOSv 15.5(3)M-2 port Gi0/0",
+                "destination_node_id": 2,
+                "destination_port_id": 5,
+                "id": 5,
+                "source_node_id": 1,
+                "source_port_id": 2
+            }
+        ],
+        "nodes": [
+            {
+                "description": "QEMU VM",
+                "id": 1,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "Cisco IOSv 15.5(3)M-1",
+                    "x": -43.0,
+                    "y": -25.0
+                },
+                "linked_clone": true,
+                "port_name_format": "Gi0/{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 1",
+                        "id": 1,
+                        "link_id": 4,
+                        "name": "Gi0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to Cisco IOSv 15.5(3)M-2 on port Gi0/0",
+                        "id": 2,
+                        "link_id": 5,
+                        "name": "Gi0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 3,
+                        "name": "Gi0/2",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 4,
+                        "name": "Gi0/3",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 4,
+                    "boot_priority": "c",
+                    "console": 5000,
+                    "console_type": "telnet",
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "vios-adventerprisek9-m.vmdk.SPA.155-3.M",
+                    "hda_disk_image_md5sum": "79f613ac3b179d5a64520730925130b2",
+                    "hda_disk_interface": "virtio",
+                    "hdb_disk_image": "IOSv_startup_config.img",
+                    "hdb_disk_image_md5sum": "bc605651c4688276f81fd59dcf5cc786",
+                    "hdb_disk_interface": "virtio",
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_interface": "ide",
+                    "legacy_networking": false,
+                    "mac_address": "00:d3:90:cf:16:00",
+                    "name": "Cisco IOSv 15.5(3)M-1",
+                    "options": "-nographic",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/usr/bin/qemu-system-x86_64",
+                    "ram": 512,
+                    "usage": "There is no default password and enable password. There is no default configuration present."
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/router.svg",
+                "type": "QemuVM",
+                "vm_id": "83b90178-4759-417f-88a3-a1761b9ecf16",
+                "x": 155.0,
+                "y": -73.0
+            },
+            {
+                "description": "QEMU VM",
+                "id": 2,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "Cisco IOSv 15.5(3)M-2",
+                    "x": -43.0,
+                    "y": -25.0
+                },
+                "linked_clone": true,
+                "port_name_format": "Gi0/{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to Cisco IOSv 15.5(3)M-1 on port Gi0/1",
+                        "id": 5,
+                        "link_id": 5,
+                        "name": "Gi0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 6,
+                        "name": "Gi0/1",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 7,
+                        "name": "Gi0/2",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 8,
+                        "name": "Gi0/3",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 4,
+                    "boot_priority": "c",
+                    "console": 5001,
+                    "console_type": "telnet",
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "vios-adventerprisek9-m.vmdk.SPA.155-3.M",
+                    "hda_disk_image_md5sum": "79f613ac3b179d5a64520730925130b2",
+                    "hda_disk_interface": "virtio",
+                    "hdb_disk_image": "IOSv_startup_config.img",
+                    "hdb_disk_image_md5sum": "bc605651c4688276f81fd59dcf5cc786",
+                    "hdb_disk_interface": "virtio",
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_interface": "ide",
+                    "legacy_networking": false,
+                    "mac_address": "00:d3:90:cb:58:00",
+                    "name": "Cisco IOSv 15.5(3)M-2",
+                    "options": "-nographic",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/usr/bin/qemu-system-x86_64",
+                    "ram": 512,
+                    "usage": "There is no default password and enable password. There is no default configuration present."
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/router.svg",
+                "type": "QemuVM",
+                "vm_id": "5992a339-60f1-400d-962a-a0936f9acb58",
+                "x": 401.0,
+                "y": -72.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "72a2dd7c-c24e-4b7f-99a0-6c049e8eeeb9",
+                "id": 3,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW1",
+                    "x": 17.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to Cisco IOSv 15.5(3)M-1 on port Gi0/0",
+                        "id": 9,
+                        "link_id": 4,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to PC1 on port Ethernet0",
+                        "id": 10,
+                        "link_id": 1,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to PC2 on port Ethernet0",
+                        "id": 11,
+                        "link_id": 2,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to PC3 on port Ethernet0",
+                        "id": 12,
+                        "link_id": 3,
+                        "name": "4",
+                        "nio": "NIO_UDP",
+                        "port_number": 4,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 13,
+                        "name": "5",
+                        "port_number": 5,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 14,
+                        "name": "6",
+                        "port_number": 6,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 15,
+                        "name": "7",
+                        "port_number": 7,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 16,
+                        "name": "8",
+                        "port_number": 8,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW1"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -85.5,
+                "y": -68.0
+            },
+            {
+                "description": "VPCS device",
+                "id": 4,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC1",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 2",
+                        "id": 17,
+                        "link_id": 1,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5002,
+                    "name": "PC1",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "2f320b37-dde3-4359-afcb-e5d004e60423",
+                "x": -361.5,
+                "y": -172.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 5,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC2",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 3",
+                        "id": 18,
+                        "link_id": 2,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5003,
+                    "name": "PC2",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "8eeb4ffb-ebcb-4922-819c-27f9b2ea56e4",
+                "x": -366.5,
+                "y": -33.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 6,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC3",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 4",
+                        "id": 19,
+                        "link_id": 3,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5004,
+                    "name": "PC3",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "e6f04639-dd40-469e-8daa-2540deebb195",
+                "x": -357.5,
+                "y": 116.5
+            }
+        ],
+        "servers": [
+            {
+                "host": "192.168.159.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            },
+            {
+                "host": "192.168.159.128",
+                "id": 2,
+                "local": false,
+                "port": 3080,
+                "protocol": "http",
+                "user": "",
+                "vm": true
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.3"
+}
